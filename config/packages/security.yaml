@@ -34,6 +34,7 @@ security:
         - { path: ^/api/quetions, methods: PUT, roles: ROLE_ADMIN }
         - { path: ^/api/quetions, methods: GET, roles: PUBLIC_ACCESS }
         - { path: ^/api/quetions, methods: POST, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/docs, roles: PUBLIC_ACCESS } # Allows accessing the Swagger UI docs
         - { path: ^/docs, roles: PUBLIC_ACCESS } # Allows accessing the Swagger UI docs
         - { path: ^/auth, roles: PUBLIC_ACCESS }
         - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
