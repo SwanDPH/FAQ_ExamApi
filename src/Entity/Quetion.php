@@ -6,7 +6,8 @@ use App\Repository\QuetionRepository;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Metadata\ApiResource;
 use Symfony\Component\Validator\Constraints as Assert;
-
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\Post;
 
 #[ApiResource]
 #[ORM\Entity(repositoryClass: QuetionRepository::class)]
